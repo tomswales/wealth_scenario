@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://tomswales.github.io/wealth_scenario/",
   "dependencies": {
     "chart.js": "^4.4.9",
     "install": "^0.13.0",
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.1",
+    "gh-pages": "^6.3.0",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
   }
