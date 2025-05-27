@@ -8,7 +8,7 @@ export function Home() {
         <Text size="lg" color="secondary">A financial simulation tool for wealth planning.</Text>
         
         <nav style={{ marginTop: 'var(--space-8)' }}>
-          <a href="#" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/test'); window.dispatchEvent(new PopStateEvent('popstate')); }}>
+          <a href="#" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/wealth_scenario/test'); window.dispatchEvent(new PopStateEvent('popstate')); }}>
             → Go to Design System Test Page
           </a>
         </nav>

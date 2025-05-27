@@ -7,7 +7,7 @@ export function Test() {
       <Text>This page showcases all design system components as they are built.</Text>
       
       <nav style={{ marginTop: 'var(--space-8)', marginBottom: 'var(--space-8)' }}>
-        <a href="#" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/'); window.dispatchEvent(new PopStateEvent('popstate')); }}>
+        <a href="#" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/wealth_scenario/'); window.dispatchEvent(new PopStateEvent('popstate')); }}>
           ← Back to Home
         </a>
       </nav>

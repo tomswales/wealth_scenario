@@ -18,9 +18,10 @@ export function App() {
 
   const renderPage = () => {
     switch (currentPath) {
-      case '/test':
+      case '/wealth_scenario/test':
         return <Test />
-      case '/':
+      case '/wealth_scenario/':
+      case '/wealth_scenario':
       default:
         return <Home />
     }
