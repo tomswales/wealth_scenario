@@ -1,4 +1,4 @@
-import { Heading, Text, Caption, Section, Input, Label, Select } from '../ui';
+import { Heading, Text, Caption, Section, Input, Label, Select, Range } from '../ui';
 
 export function FormShowcase() {
   return (
@@ -302,6 +302,177 @@ export function FormShowcase() {
         
         <Caption>
           Usage: Select with options array, size (sm, base, lg), state (default, error, success), placeholder, and disabled options
+        </Caption>
+      </div>
+      
+      {/* Range Component Showcase */}
+      <div style={{ marginBottom: 'var(--space-8)' }}>
+        <Heading level={3}>Range Slider Component</Heading>
+        <Text color="secondary" style={{ marginBottom: 'var(--space-6)' }}>
+          The Range component provides interactive sliders for numeric input with visual feedback.
+        </Text>
+        
+        <div style={{ 
+          padding: 'var(--space-6)', 
+          backgroundColor: 'white',
+          borderRadius: 'var(--radius-lg)',
+          boxShadow: 'var(--shadow-sm)',
+          marginBottom: 'var(--space-6)'
+        }}>
+          <div style={{ marginBottom: 'var(--space-6)' }}>
+            <Heading level={4} style={{ marginBottom: 'var(--space-4)' }}>Financial Parameter Sliders</Heading>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)' }}>
+              <div>
+                <Label>Monthly Investment Amount</Label>
+                <Range
+                  min={100}
+                  max={5000}
+                  step={50}
+                  defaultValue={1000}
+                  formatValue={(val) => `${val.toLocaleString()}`}
+                  showMinMax
+                  size="base"
+                />
+              </div>
+              
+              <div>
+                <Label>Expected Annual Return</Label>
+                <Range
+                  min={1}
+                  max={15}
+                  step={0.5}
+                  defaultValue={7}
+                  formatValue={(val) => `${val}%`}
+                  showMinMax
+                  size="base"
+                />
+              </div>
+              
+              <div>
+                <Label>Investment Time Horizon</Label>
+                <Range
+                  min={1}
+                  max={40}
+                  step={1}
+                  defaultValue={25}
+                  formatValue={(val) => `${val} year${val !== 1 ? 's' : ''}`}
+                  showMinMax
+                  size="base"
+                />
+              </div>
+              
+              <div>
+                <Label>Risk Tolerance Level</Label>
+                <Range
+                  min={1}
+                  max={10}
+                  step={1}
+                  defaultValue={6}
+                  formatValue={(val) => {
+                    const levels = ['', 'Very Low', 'Low', 'Low-Med', 'Medium', 'Med-High', 'High', 'High+', 'Very High', 'Aggressive', 'Max Risk'];
+                    return levels[val] || val.toString();
+                  }}
+                  showValue
+                  size="base"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div style={{ marginBottom: 'var(--space-6)' }}>
+            <Heading level={4} style={{ marginBottom: 'var(--space-4)' }}>Range Sizes</Heading>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
+              <div>
+                <Label size="sm">Small Range</Label>
+                <Range
+                  size="sm"
+                  min={0}
+                  max={100}
+                  defaultValue={25}
+                  formatValue={(val) => `${val}%`}
+                />
+              </div>
+              <div>
+                <Label>Base Range (Default)</Label>
+                <Range
+                  size="base"
+                  min={0}
+                  max={100}
+                  defaultValue={50}
+                  formatValue={(val) => `${val}%`}
+                />
+              </div>
+              <div>
+                <Label size="lg">Large Range</Label>
+                <Range
+                  size="lg"
+                  min={0}
+                  max={100}
+                  defaultValue={75}
+                  formatValue={(val) => `${val}%`}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div style={{ marginBottom: 'var(--space-6)' }}>
+            <Heading level={4} style={{ marginBottom: 'var(--space-4)' }}>Display Options</Heading>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
+              <div>
+                <Label>With Min/Max Labels</Label>
+                <Range
+                  min={10000}
+                  max={100000}
+                  step={5000}
+                  defaultValue={50000}
+                  formatValue={(val) => `${(val/1000)}k`}
+                  showMinMax
+                  showValue
+                />
+              </div>
+              <div>
+                <Label>Value Only</Label>
+                <Range
+                  min={0}
+                  max={360}
+                  step={15}
+                  defaultValue={180}
+                  formatValue={(val) => `${val}°`}
+                  showValue
+                />
+              </div>
+              <div>
+                <Label>No Value Display</Label>
+                <Range
+                  min={0}
+                  max={10}
+                  defaultValue={5}
+                  showValue={false}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <Heading level={4} style={{ marginBottom: 'var(--space-4)' }}>Disabled State</Heading>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
+              <div>
+                <Label>Disabled Range</Label>
+                <Range
+                  min={0}
+                  max={100}
+                  defaultValue={30}
+                  formatValue={(val) => `${val}%`}
+                  disabled
+                  showMinMax
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <Caption>
+          Usage: Range with min/max values, step size, formatValue function, showValue/showMinMax options, and size variants
         </Caption>
       </div>
     </Section>
