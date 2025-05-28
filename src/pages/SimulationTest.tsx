@@ -1,5 +1,5 @@
 import { Heading, Text } from '../components/ui';
-import { BasicCalculatorShowcase } from '../components/simulation';
+import { BasicCalculatorShowcase, AnnualProjectionsShowcase, InvestmentGrowthShowcase } from '../components/simulation';
 
 export function SimulationTest() {
   return (
@@ -23,21 +23,9 @@ export function SimulationTest() {
         
         <BasicCalculatorShowcase />
 
-        <div style={{ marginBottom: 'var(--space-6)' }}>
-          <Heading level={3}>Annual Projections</Heading>
-          <Text>Test: Monthly savings of $1,500 → shows $18,000 annual savings with proper formatting</Text>
-          <div style={{ padding: 'var(--space-4)', backgroundColor: 'var(--color-neutral-100)', borderRadius: 'var(--radius-md)', marginTop: 'var(--space-2)' }}>
-            <Text style={{ fontStyle: 'italic' }}>🚧 Component not yet implemented</Text>
-          </div>
-        </div>
+        <AnnualProjectionsShowcase />
 
-        <div style={{ marginBottom: 'var(--space-6)' }}>
-          <Heading level={3}>Investment Growth Preview</Heading>
-          <Text>Test: $1,500/month at 7% return shows 1yr: ~$18,700, 5yr: ~$108,000, 10yr: ~$248,000</Text>
-          <div style={{ padding: 'var(--space-4)', backgroundColor: 'var(--color-neutral-100)', borderRadius: 'var(--radius-md)', marginTop: 'var(--space-2)' }}>
-            <Text style={{ fontStyle: 'italic' }}>🚧 Component not yet implemented</Text>
-          </div>
-        </div>
+        <InvestmentGrowthShowcase />
       </section>
 
       {/* Phase 2B: Simulation Library Integration */}
