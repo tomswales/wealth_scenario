@@ -17,7 +17,7 @@ export function StatusShowcase() {
           <Text style={{ marginBottom: 'var(--space-2)' }}>✅ Typography components (Heading, Text, Caption) are complete</Text>
           <Text style={{ marginBottom: 'var(--space-2)' }}>✅ Layout components (Container, Section) are complete</Text>
           <Text style={{ marginBottom: 'var(--space-2)' }}>✅ Button component is complete with all variants and states</Text>
-          <Text style={{ marginBottom: 'var(--space-2)' }}>✅ Form components (Input, Label) are complete with accessibility</Text>
+          <Text style={{ marginBottom: 'var(--space-2)' }}>✅ Form components (Input, Label, Select) are complete with accessibility</Text>
           <Text style={{ marginBottom: 'var(--space-2)' }}>✅ Card components are complete with variants and structured layouts</Text>
           <Text style={{ marginBottom: 'var(--space-2)' }}>✅ Grid system is complete with responsive layouts and spanning</Text>
           <Text style={{ marginBottom: '0' }}>⏳ More components will appear here as they are built</Text>

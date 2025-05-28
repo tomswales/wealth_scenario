@@ -6,10 +6,11 @@ import { Section } from './Section';
 import { Button } from './Button';
 import { Input } from './Input';
 import { Label } from './Label';
+import { Select } from './Select';
 import { Card, CardHeader, CardBody, CardFooter } from './Card';
 import { Grid, GridItem } from './Grid';
 
-export { Heading, Text, Caption, Container, Section, Button, Input, Label, Card, CardHeader, CardBody, CardFooter, Grid, GridItem };
+export { Heading, Text, Caption, Container, Section, Button, Input, Label, Select, Card, CardHeader, CardBody, CardFooter, Grid, GridItem };
 
 export type { HeadingProps } from './Heading';
 export type { TextProps } from './Text';
@@ -19,5 +20,6 @@ export type { SectionProps } from './Section';
 export type { ButtonProps } from './Button';
 export type { InputProps } from './Input';
 export type { LabelProps } from './Label';
+export type { SelectProps } from './Select';
 export type { CardProps, CardHeaderProps, CardBodyProps, CardFooterProps } from './Card';
 export type { GridProps, GridItemProps } from './Grid';
