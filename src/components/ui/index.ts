@@ -7,8 +7,9 @@ import { Button } from './Button';
 import { Input } from './Input';
 import { Label } from './Label';
 import { Card, CardHeader, CardBody, CardFooter } from './Card';
+import { Grid, GridItem } from './Grid';
 
-export { Heading, Text, Caption, Container, Section, Button, Input, Label, Card, CardHeader, CardBody, CardFooter };
+export { Heading, Text, Caption, Container, Section, Button, Input, Label, Card, CardHeader, CardBody, CardFooter, Grid, GridItem };
 
 export type { HeadingProps } from './Heading';
 export type { TextProps } from './Text';
@@ -19,3 +20,4 @@ export type { ButtonProps } from './Button';
 export type { InputProps } from './Input';
 export type { LabelProps } from './Label';
 export type { CardProps, CardHeaderProps, CardBodyProps, CardFooterProps } from './Card';
+export type { GridProps, GridItemProps } from './Grid';

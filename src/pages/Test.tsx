@@ -5,6 +5,7 @@ import {
   ButtonShowcase, 
   FormShowcase, 
   CardShowcase, 
+  GridShowcase,
   DesignTokensShowcase, 
   StatusShowcase 
 } from '../components/showcases';
@@ -26,6 +27,7 @@ export function Test() {
       <ButtonShowcase />
       <FormShowcase />
       <CardShowcase />
+      <GridShowcase />
       <DesignTokensShowcase />
       <StatusShowcase />
     </div>
