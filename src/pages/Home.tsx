@@ -9,7 +9,11 @@ export function Home() {
         
         <nav style={{ marginTop: 'var(--space-8)' }}>
           <a href="#" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/wealth_scenario/test'); window.dispatchEvent(new PopStateEvent('popstate')); }}>
-            → Go to Design System Test Page
+            → Design System Test Page
+          </a>
+          {' | '}
+          <a href="#" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/wealth_scenario/simulation-test'); window.dispatchEvent(new PopStateEvent('popstate')); }}>
+            → Simulation Engine Test Page
           </a>
         </nav>
       </Section>

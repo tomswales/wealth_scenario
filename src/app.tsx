@@ -2,6 +2,7 @@ import { useState, useEffect } from 'preact/hooks'
 import { Container } from './components/ui'
 import { Home } from './pages/Home'
 import { Test } from './pages/Test'
+import { SimulationTest } from './pages/SimulationTest'
 import './app.css'
 
 export function App() {
@@ -20,6 +21,8 @@ export function App() {
     switch (currentPath) {
       case '/wealth_scenario/test':
         return <Test />
+      case '/wealth_scenario/simulation-test':
+        return <SimulationTest />
       case '/wealth_scenario/':
       case '/wealth_scenario':
       default:
