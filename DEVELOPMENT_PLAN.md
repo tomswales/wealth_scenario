@@ -90,24 +90,30 @@ src/
    - Create design system showcase page at `/design`
    - Implement responsive grid system
 
-### Phase 2: Core Simulation Engine
-1. **Wealth Model Implementation**
-   - Create wealth simulation model using simulation library
-   - Implement financial calculations:
-     - Monthly to annual conversions
-     - Compound interest calculations
-     - Tax calculations on investment income
-     - Progressive wealth accumulation over time
+### Phase 2: Core Simulation Engine - Incremental User Stories
 
-2. **Input Parameters**
-   - Net monthly salary
-   - Monthly expenses
-   - Initial investment amount
-   - Monthly investment contribution
-   - Expected annual return on investments (%)
-   - Tax rate on investment income (%)
-   - Simulation time period (years)
-   - Inflation rate (optional advanced parameter)
+**Epic 2: Build financial modeling engine with testable incremental improvements**
+
+#### Phase 2A: Foundation & Basic Calculations
+- **US-SIM-01**: Basic Financial Calculator - Display net monthly savings (Salary - Expenses)
+- **US-SIM-02**: Annual Projections - Convert monthly to annual figures with proper formatting
+- **US-SIM-03**: Investment Growth Preview - Simple compound interest for 1, 5, 10 years
+
+#### Phase 2B: Simulation Library Integration  
+- **US-SIM-04**: System Dynamics Model Setup - Replace manual calculations with simulation library
+- **US-SIM-05**: Time-Series Simulation - Generate year-by-year wealth accumulation data
+- **US-SIM-06**: Interactive Parameter Updates - Real-time projections with Range sliders
+
+#### Phase 2C: Advanced Financial Modeling
+- **US-SIM-07**: Tax Considerations - Account for investment taxes in projections
+- **US-SIM-08**: Inflation Adjustment - Show both nominal and real purchasing power
+- **US-SIM-09**: Scenario Comparison - Save and compare up to 3 different parameter sets
+
+#### Phase 2D: Data Validation & Edge Cases
+- **US-SIM-10**: Input Validation & Error Handling - Clear feedback for invalid data
+- **US-SIM-11**: Performance Optimization - Fast, responsive simulations
+
+**Detailed implementation plan:** See `SIMULATION_PLAN.md`
 
 ### Phase 3: User Interface
 1. **Parameter Input Form**
@@ -239,13 +245,22 @@ Total Wealth = Accumulated Savings + Net Investment Value
 
 ## Development Phases Timeline
 
-1. **Phase 1** (Foundation): ~2-3 days
-2. **Phase 2** (Simulation): ~2-3 days  
-3. **Phase 3** (UI): ~3-4 days
-4. **Phase 4** (Charts): ~2-3 days
-5. **Phase 5** (Polish): ~2-3 days
+1. **Phase 1** (Design System Foundation): ~2-3 days
+2. **Phase 2A** (Basic Calculator): ~2-3 days
+3. **Phase 2B** (Simulation Integration): ~3-4 days  
+4. **Phase 2C** (Advanced Modeling): ~3-4 days
+5. **Phase 2D** (Validation & Performance): ~2-3 days
+6. **Phase 3** (UI Polish): ~2-3 days
+7. **Phase 4** (Charts & Visualization): ~2-3 days
+8. **Phase 5** (Advanced Features): ~2-3 days
 
-**Total Estimated Time**: 11-16 days
+**Total Estimated Time**: 18-26 days
+
+### Incremental Milestones
+- **Week 1**: Design System + Basic Calculator → Users can calculate savings potential
+- **Week 2**: Simulation Engine Integration → Sophisticated modeling with real-time updates  
+- **Week 3**: Advanced Features → Tax, inflation, scenario comparison
+- **Week 4**: Visualization & Polish → Charts, export, production-ready
 
 ## Prompt Instructions for Future Development
 
@@ -288,7 +303,9 @@ Next task: [Specify what needs to be implemented next]
 
 Create these files/folders as development progresses:
 - [ ] src/types/wealth.ts
-- [ ] src/models/wealth.ts
+- [ ] src/models/wealth.ts  
+- [ ] src/utils/calculations.ts
+- [ ] src/utils/formatters.ts
 - [ ] src/components/ui/ (all design system components)
 - [ ] src/components/forms/ParameterForm.tsx
 - [ ] src/components/charts/SavingsChart.tsx
@@ -298,7 +315,9 @@ Create these files/folders as development progresses:
 - [ ] src/styles/design-system.css
 - [ ] src/styles/components.css
 - [ ] src/styles/layout.css
-- [ ] src/utils/calculations.ts
-- [ ] src/utils/formatters.ts
+
+## Related Documentation
+- **SIMULATION_PLAN.md** - Detailed user stories and implementation plan for Phase 2
+- **README.md** - Project overview and current development status
 
 This development plan serves as the single source of truth for the project architecture and implementation strategy.

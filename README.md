@@ -72,3 +72,34 @@ Visit `/test` route to see the design system components and tokens in action.
 ## 🧪 Development Status
 
 Currently building the design system foundation. Check the `/test` page to see progress on components and design tokens.
+
+### Design System Progress
+
+#### ✅ Completed Components
+- Core layout components (Container, Section, Grid)
+- Typography system (Heading, Text, Caption)
+- Form components (Input, Label, Select, Range)
+- Button components with variants
+- Card components
+- Design tokens and CSS variables
+
+#### 🚧 Remaining Design System User Stories
+
+**Form Components - Final Polish**
+- US-DS-07: Form validation states and error messaging
+- US-DS-08: Loading states and progress indicators
+- US-DS-09: Notifications and alerts
+
+**Interactive Components**
+- US-DS-10: Tooltips and popovers for contextual help
+- US-DS-11: Modal dialogs for focused tasks
+
+**Data Display Components**
+- US-DS-12: Data tables for structured financial information
+- US-DS-13: Badges and status indicators
+
+**Layout & Navigation**
+- US-DS-14: Consistent navigation components
+
+**Documentation**
+- US-DS-15: Comprehensive component documentation
