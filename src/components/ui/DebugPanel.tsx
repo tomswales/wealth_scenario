@@ -1,7 +1,7 @@
 // Debug panel component for viewing logs during development
 import { useState } from 'preact/hooks';
 import { logger } from '../../utils/logger';
-import type { LogEntry, LogLevel } from '../../utils/logger';
+import type { LogLevel } from '../../utils/logger';
 import { Button } from './Button';
 import { Heading } from './Heading';
 import { Text } from './Text';
