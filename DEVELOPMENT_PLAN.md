@@ -298,6 +298,7 @@ Next task: [Specify what needs to be implemented next]
 - Charts should be responsive and follow design system colors
 - Design system components must be showcased on /design page
 - App must work entirely client-side with no backend dependencies
+- **Debug Logging**: Use `import { error, warn, info, debug } from './utils/logger'` for development debugging
 
 ## File Structure Checklist
 

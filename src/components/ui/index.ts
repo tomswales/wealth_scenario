@@ -10,8 +10,9 @@ import { Select } from './Select';
 import { Range } from './Range';
 import { Card, CardHeader, CardBody, CardFooter } from './Card';
 import { Grid, GridItem } from './Grid';
+import { DebugPanel } from './DebugPanel';
 
-export { Heading, Text, Caption, Container, Section, Button, Input, Label, Select, Range, Card, CardHeader, CardBody, CardFooter, Grid, GridItem };
+export { Heading, Text, Caption, Container, Section, Button, Input, Label, Select, Range, Card, CardHeader, CardBody, CardFooter, Grid, GridItem, DebugPanel };
 
 export type { HeadingProps } from './Heading';
 export type { TextProps } from './Text';

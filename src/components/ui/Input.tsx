@@ -7,6 +7,7 @@ export interface InputProps {
   defaultValue?: string | number;
   disabled?: boolean;
   required?: boolean;
+  step?: string | number;
   id?: string;
   name?: string;
   onChange?: (event: Event) => void;
@@ -25,6 +26,7 @@ export function Input({
   defaultValue,
   disabled = false,
   required = false,
+  step,
   id,
   name,
   onChange,
@@ -88,6 +90,7 @@ export function Input({
   return (
     <input
       type={type}
+      step={step}
       id={id}
       name={name}
       placeholder={placeholder}

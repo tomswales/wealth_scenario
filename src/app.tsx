@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'preact/hooks'
-import { Container } from './components/ui'
+import { Container, DebugPanel } from './components/ui'
 import { Home } from './pages/Home'
 import { Test } from './pages/Test'
 import { SimulationTest } from './pages/SimulationTest'
+import { info } from './utils/logger'
 import './app.css'
 
 export function App() {
@@ -15,6 +16,8 @@ export function App() {
 
     window.addEventListener('popstate', handlePopState)
     return () => window.removeEventListener('popstate', handlePopState)
+    
+    info('App component mounted and routing initialized');
   }, [])
 
   const renderPage = () => {
@@ -31,8 +34,11 @@ export function App() {
   }
 
   return (
-    <Container size="lg" style={{ paddingTop: 'var(--space-8)', paddingBottom: 'var(--space-8)' }}>
-      {renderPage()}
-    </Container>
+    <>
+      <Container size="lg" style={{ paddingTop: 'var(--space-8)', paddingBottom: 'var(--space-8)' }}>
+        {renderPage()}
+      </Container>
+      <DebugPanel />
+    </>
   )
 }

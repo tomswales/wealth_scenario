@@ -71,3 +71,8 @@ jspm_packages/
 # Temporary folders
 tmp/
 temp/
+
+# Debug logging (local development only)
+debug-logs/
+*.debug.log
+src/utils/logger.ts

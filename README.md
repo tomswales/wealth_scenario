@@ -23,6 +23,13 @@ npm run build
 npm run preview
 ```
 
+### Debug Logging
+The app includes a built-in logging system for development:
+- **Access**: Click the "🐛 Debug Logs" button (bottom-right corner)
+- **Usage**: `import { error, warn, info, debug } from './utils/logger'`
+- **Features**: Auto-captures errors, filter by level, export logs
+- **Reset**: Logs clear automatically on dev server restart
+
 ### Deployment
 
 This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
@@ -60,6 +67,7 @@ Visit `/test` route to see the design system components and tokens in action.
 - **Vite Config**: Configured with base path for GitHub Pages deployment
 - **GitHub Actions**: Automated deployment on push to main branch
 - **TypeScript**: Full type safety with strict configuration
+- **Debug Logging**: Built-in logging system for development debugging (resets on startup)
 
 ## 📊 Features (Planned)
 

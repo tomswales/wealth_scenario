@@ -1,4 +1,5 @@
 import { Heading, Text } from '../components/ui';
+import { TestError } from '../components/ui/TestError';
 import { 
   LayoutShowcase, 
   TypographyShowcase, 
@@ -22,6 +23,7 @@ export function Test() {
         </a>
       </nav>
 
+      <TestError />
       <LayoutShowcase />
       <TypographyShowcase />
       <ButtonShowcase />
